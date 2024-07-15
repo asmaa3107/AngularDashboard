@@ -17,6 +17,6 @@ export class LoggingService {
   }
 
   formatedMessageLog(message: string): void {
-    console.log('%cApi Response is - ${message}', 'background: blue; color: yellow; font-size: 14px;', message);
+    console.log(`%cApi Response is - ${message}`, 'background: blue; color: yellow; font-size: 14px;', message);
   }
 }

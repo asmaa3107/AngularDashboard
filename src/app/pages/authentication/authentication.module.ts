@@ -16,8 +16,10 @@ import { AuthenticationRoutes } from './authentication.routing';
 
 import { AppSideLoginComponent } from './login/login.component';
 import { AppSideRegisterComponent } from './register/register.component';
+import { LoggingService } from 'src/app/services/logging.service';
 
 @NgModule({
+  providers: [LoggingService],
   imports: [
     CommonModule,
     RouterModule.forChild(AuthenticationRoutes),
