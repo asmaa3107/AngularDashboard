@@ -32,9 +32,6 @@ import { LoggingService } from 'src/app/services/logging.service';
     ReactiveFormsModule,
     TablerIconsModule.pick(TablerIcons),
   ],
-  declarations: [
-    AppSideLoginComponent,
-    AppSideRegisterComponent,
-  ],
+  declarations: [AppSideLoginComponent, AppSideRegisterComponent],
 })
 export class AuthenticationModule {}

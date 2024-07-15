@@ -1,15 +1,15 @@
-@use "sass:map";
-@use "sass:meta";
-@use "sass:list";
-@use "variables";
+@use 'sass:map';
+@use 'sass:meta';
+@use 'sass:list';
+@use 'variables';
 
-@use "functions";
-@use "flexbox";
-@use "display";
-@use "border";
-@use "text";
-@use "spacing";
-@use "rounded";
+@use 'functions';
+@use 'flexbox';
+@use 'display';
+@use 'border';
+@use 'text';
+@use 'spacing';
+@use 'rounded';
 
 $utilities: functions.map-collect(
   variables.$utilities,
@@ -26,9 +26,9 @@ $utilities: functions.map-collect(
 
   // If the values are a list or string, convert it into a map
   @if meta.type-of($values) ==
-    "string" or
+    'string' or
     meta.type-of(list.nth($values, 1)) !=
-    "list"
+    'list'
   {
     $values: list.zip($values, $values);
   }
@@ -38,9 +38,9 @@ $utilities: functions.map-collect(
 
   // Utility class maybe empty, (e.g. with position class)
   $property-class-prefix-hyphen: if(
-    $property-class-prefix == "",
+    $property-class-prefix == '',
     $property-class-prefix,
-    $property-class-prefix + "-"
+    $property-class-prefix + '-'
   );
 
   @each $class-modifier, $value in $values {

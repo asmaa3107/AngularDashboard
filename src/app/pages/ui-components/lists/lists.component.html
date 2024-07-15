@@ -145,7 +145,7 @@
               {{
                 shoes2.selectedOptions.hasValue()
                   ? shoes2.selectedOptions.selected[0].value
-                  : "None"
+                  : 'None'
               }}
             </p>
           </mat-card-content>
@@ -165,15 +165,23 @@
               <div mat-subheader class="mat-body-2 m-b-16 f-w-600">Folders</div>
               <mat-list-item *ngFor="let folder of folders">
                 <mat-icon matListItemIcon>folder</mat-icon>
-                <div matListItemTitle class="mat-body-2 f-w-600">{{ folder.name }}</div>
-                <div matListItemLine class="f-s-14 mat-body-1">{{ folder.updated | date }}</div>
+                <div matListItemTitle class="mat-body-2 f-w-600">
+                  {{ folder.name }}
+                </div>
+                <div matListItemLine class="f-s-14 mat-body-1">
+                  {{ folder.updated | date }}
+                </div>
               </mat-list-item>
               <mat-divider></mat-divider>
               <div mat-subheader class="mat-body-2 m-y-16 f-w-600">Notes</div>
               <mat-list-item *ngFor="let note of notes">
                 <mat-icon matListItemIcon>note</mat-icon>
-                <div matListItemTitle class="mat-body-2 f-w-600">{{ note.name }}</div>
-                <div matListItemLine class="f-s-14 mat-body-1">{{ note.updated | date }}</div>
+                <div matListItemTitle class="mat-body-2 f-w-600">
+                  {{ note.name }}
+                </div>
+                <div matListItemLine class="f-s-14 mat-body-1">
+                  {{ note.updated | date }}
+                </div>
               </mat-list-item>
             </mat-list>
           </mat-card-content>

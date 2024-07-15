@@ -9,8 +9,8 @@
     "test": "ng test",
     "publish": "vercel --prod",
     "lint": "eslint . --ext .ts",
-    "lint:fix": "eslint . --ext .ts --fix"
-
+    "lint:fix": "eslint . --ext .ts --fix",
+    "format": "prettier --write \"src/**/*.{ts,html,css,scss,json,md}\""
   },
   "private": true,
   "dependencies": {

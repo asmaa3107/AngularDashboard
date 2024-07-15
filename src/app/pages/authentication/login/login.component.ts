@@ -8,9 +8,7 @@ import { LoggingService } from 'src/app/services/logging.service';
 export class AppSideLoginComponent {
   constructor(private loggingService: LoggingService) {}
 
-  login(){
-  this.loggingService.formatedMessageLog('Login');
+  login() {
+    this.loggingService.formatedMessageLog('Login');
   }
-
-
 }
